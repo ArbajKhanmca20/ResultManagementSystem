@@ -1,0 +1,13 @@
+.bg-light-green
+{
+  background-color: aquamarine!important;
+}
+.z-index-1{
+  z-index: 1!important;
+}
+
+.btn-yellow{
+background-color: rgb(214, 214, 153);
+color: orange;
+border: 2px solid orange!important;
+}

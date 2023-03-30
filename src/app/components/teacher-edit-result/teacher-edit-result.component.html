@@ -1,0 +1,35 @@
+<div class ="container-fluid">
+  <div class="row">
+    <a class="p-3" routerLink="/result">Back</a>
+  </div>
+  <div class="row py-3">
+    <div class="col-md-7 m-auto mh-80 d-flex align-items-center justify-content-center">
+      <form (submit)="editresult()" #editstudent="ngForm" class="px-3 w-50 card py-3">
+          <label for="" class="fw-bold fs-5">Edit Result</label>
+          <div class="form-group py-2">
+              <label for="rollNo" class="fs-6 p1">Roll No.</label>
+              <input  disabled required type="number" [(ngModel)]="studentResult.id" name="id" min="1" placeholder = " Enter your Roll no: "class="form-control">
+            </div>
+            <div class="form-group py-2">
+              <label for="Name" class="fs-6 p1">Name</label>
+              <input required type="name" [(ngModel)]="studentResult.name" name="name" min="1" placeholder = " Enter your Name"class="form-control">
+            </div>
+          <div class="form-group py-2">
+              <label for="date" class="fs-6 p1">Date Of Birth</label>
+              <input required type="date"[(ngModel)]="studentResult.dob" name="dob" placeholder = " Enter your D.O.B." class="form-control">
+          </div>
+          <div class="form-group py-2">
+            <label for="no:" class="fs-6 p1">Score</label>
+            <input required type="number" [(ngModel)]="studentResult.score" name="score" min="1" placeholder = " Enter Marks"class="form-control">
+          </div>
+          <div class="row ">
+            <div class="col m-auto d-flex py-3 justify-content-evenly">
+              <button type="submit" class="btn-primary px-4 rounded-pill btn btn-md">Edit</button>
+              <button type = "reset" class="btn-secondary px-4 rounded-pill btn btn-md">Clear</button>
+            </div>
+            </div>
+        </form>
+      </div>
+    </div>
+</div>
+

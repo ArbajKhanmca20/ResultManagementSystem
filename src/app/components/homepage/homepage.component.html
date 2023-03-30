@@ -1,0 +1,17 @@
+<div
+  class="container-fluid mh-80 text-center d-flex align-items-center justify-content-center"
+>
+  <div
+    class="h-100  w-50 text-center"
+  >
+    <h5 class="text-center p-3 fw-bold">Login As</h5>
+    <div class="w-50 m-auto d-flex align-items-center flex-wrap justify-content-evenly">
+      <button type="button" (click)="teacherLogin()" class="btn m-1 btn-md py-2 fw-bold px-4 btn-primary" name="teacherbtn">
+        Teachers
+      </button>
+      <button type="button" (click)="router.navigate(['studentsearch'])" class="btn m-1 btn-md py-2 fw-bold px-4 btn-primary" name="studentbtn">
+        Students
+      </button>
+    </div>
+  </div>
+</div>

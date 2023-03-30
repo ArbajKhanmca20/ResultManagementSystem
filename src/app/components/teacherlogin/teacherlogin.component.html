@@ -1,0 +1,37 @@
+<div class="container-fluid  mh-80">
+  <div class="row h-100">
+    <div class="col-md-7 m-auto d-flex justify-content-center align-items-center h-100">
+      <form (submit)="loginuser(loginform)" #loginform="ngForm" class="myForm w-50 shadow p-4" method="post">
+        <h5 class="text-center">Teacher Login</h5>
+        <div class="form-group py-2">
+          <label for="email">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            #emailInput="ngModel" ngModel
+            id="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group py-2">
+          <label for="password">Password</label>
+          <input
+            class="form-control"
+            type="password"
+            name="password"
+            #passwordInput="ngModel" ngModel
+            placeholder="password"
+          />
+        </div>
+        <div class="form-group text-center p-2">
+          <input
+            type="submit"
+            name="submit"
+            class="btn btn-primary"
+            value="Login"
+          />
+        </div>
+        </form>
+  </div>
+</div>
